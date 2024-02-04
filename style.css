@@ -1,6 +1,22 @@
+* {
+    padding: none;
+    margin: none;
+}
+
+:root {
+    --main-color: #f0f8ff;
+}
+
+html, body{
+    height: 100%;
+    
+}
+
 body {
     display: flex;
     justify-content: center;
+    background-color: black;
+    margin: 0 3rem 0 3rem;
 }
 
 .leftNav {
@@ -9,12 +25,43 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('./images/background.jpeg');
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-position: center;
+}
+
+.banner {
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner+.content {
+    color: white;
+    opacity: 100%;
 }
 
 .signUp {
     width: 70%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 5rem;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: var(--main-color);
+}
+
+.formContent {
+    background-color: white;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50%vh;
+}
+
+.form-row {
+    padding-left: 5rem;
 }

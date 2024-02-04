@@ -10,40 +10,52 @@
 <body>
     <div class="background"></div>
     <div class="leftNav">
-        <div class="banner">
-            <div class="content">breadz</div>
-        </div>
+        <div class="banner">breadz</div>
+        <div class="content"></div>
         <div class="imgCredit"></div>
     </div>
     <div class="signUp">
-        <div class="siteDescription">This is not a real online service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, soluta. Numquam est corrupti tempora molestiae voluptatem ex eveniet, laboriosam repudiandae nisi architecto odit, similique magnam exercitationem incidunt ullam nemo! Maxime!</div>
+        <div class="siteDescription form-row">This is not a real online service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, soluta. Numquam est corrupti tempora molestiae voluptatem ex eveniet, laboriosam repudiandae nisi architecto odit, similique magnam exercitationem incidunt ullam nemo! Maxime!</div>
         <form action="">
             <div class="formContent">
-                <h1>Let's do this!</h1>
+
+                <h1 class="form-row">Let's do this!</h1>
+
                 <div class="form-row">
-                    <input type="text" id="firstName" name="firstName">
                     <label for="firstName">first name</label>
-                    <input type="text" id="lastName" name="firstName">
+                    <input type="text" id="firstName" name="firstName" required>
+
                     <label for="lastName">last name</label>
+                    <input type="text" id="lastName" name="firstName" required>
                 </div>
+
                 <div class="form-row">
-                    <input type="email" id="email" name="email">
                     <label for="email">email</label>
-                    <input type="tel" id="tel" name="tel">
+                    <input type="email" id="email" name="email" required>
+
                     <label for="tel">phone number</label>
+                    <input type="tel" id="tel" name="tel">
                 </div>
+
                 <div class="form-row">
-                    <input type="password" id="password" name="password">
                     <label for="password">password</label>
-                    <input type="password" id="passwordC" name="passwordC">
+                    <input type="password" id="password" name="password" required>
+                    
                     <label for="passwordC">confirm password</label>
+                    <input type="password" id="passwordC" name="passwordC" required>
                 </div>
+
             </div>
+
             <div class="form-row">
                 <button>Create Account</button>
             </div>
+
         </form>
-        <div class="form-row logIn">Already have an account? <a href="">Log in</a></div>
+
+        <div class="form-row logIn">Already have an account?
+            <a href="">Log in</a>
+        </div>
     </div>
     
 </body>
