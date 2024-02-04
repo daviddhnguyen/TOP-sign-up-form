@@ -1,67 +1,43 @@
-* {
-    padding: none;
-    margin: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* DECLARE VARIABLES */
 
 :root {
-    --main-color: #f0f8ff;
+    --font-color: rgb(188,170,170);
+    --form-color: rgb(119,138,171);
+    --highlight-color: rgb(221,187,152);
+    --bg-color: rgb(238,221,204);
+    --error-color: rgb(180,179,135);
 }
 
-html, body{
-    height: 100%;
-    
+/* RESET AND SET BASE STYLING */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    margin: 0 3rem 0 3rem;
+    overflow: hidden;
+    background-color: var(--bg-color);
 }
 
-.leftNav {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url('./images/background.jpeg');
-    background-repeat: no-repeat;
-    background-color: #cccccc;
-    background-position: center;
-}
+/*MAIN CONTAINER: IMAGE AND FORM */
 
-.banner {
-    color: white;
-    background-color: black;
-    opacity: 0.5;
+.card-container {
+    display: grid;
+    grid-template-columns: calc(100%-60%) auto;
+    height: 100vh;
     width: 100%;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    background-color: var(--form-color);
 }
 
-.banner+.content {
-    color: white;
-    opacity: 100%;
-}
-
-.signUp {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-around;
-    background-color: var(--main-color);
-}
-
-.formContent {
-    background-color: white;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 50%vh;
-}
-
-.form-row {
-    padding-left: 5rem;
+/* IMAGE LEFT SIDE */
+.image-container {
+    display: grid;
+    place-items: center;
 }

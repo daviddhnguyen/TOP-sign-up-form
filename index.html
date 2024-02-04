@@ -3,60 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breadz Sign-Up Page</title>
+    <title>Breadz | Sign-Up</title>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="leftNav">
-        <div class="banner">breadz</div>
-        <div class="content"></div>
-        <div class="imgCredit"></div>
-    </div>
-    <div class="signUp">
-        <div class="siteDescription form-row">This is not a real online service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, soluta. Numquam est corrupti tempora molestiae voluptatem ex eveniet, laboriosam repudiandae nisi architecto odit, similique magnam exercitationem incidunt ullam nemo! Maxime!</div>
-        <form action="">
-            <div class="formContent">
-
-                <h1 class="form-row">Let's do this!</h1>
-
-                <div class="form-row">
-                    <label for="firstName">first name</label>
-                    <input type="text" id="firstName" name="firstName" required>
-
-                    <label for="lastName">last name</label>
-                    <input type="text" id="lastName" name="firstName" required>
-                </div>
-
-                <div class="form-row">
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="tel">phone number</label>
-                    <input type="tel" id="tel" name="tel">
-                </div>
-
-                <div class="form-row">
-                    <label for="password">password</label>
-                    <input type="password" id="password" name="password" required>
-                    
-                    <label for="passwordC">confirm password</label>
-                    <input type="password" id="passwordC" name="passwordC" required>
-                </div>
-
-            </div>
-
-            <div class="form-row">
-                <button>Create Account</button>
-            </div>
-
-        </form>
-
-        <div class="form-row logIn">Already have an account?
-            <a href="">Log in</a>
+    <main class="card-container">
+        <div class="image-container">
+            <img src="./assets/images/" class="illustration" alt="">
+            <p class="motto">Sign up today to get the latest news!</p>
+            <!--add mobile btm nav button-->
         </div>
-    </div>
+        <form action="" method="post">
+            <div class="form-container">
+                <h1 class="companyName form-header">Breadz <sup>&trade;</sup></h1>
+                        <div class="input-container">
+                            <label for="firstName"></label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span>first name</span>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="lastName"></label>
+                            <input type="text" id="lastName" name="firstName" required>
+                            <span>last name</span>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="username"></label>
+                            <input type="text" id="username" name="username" required>
+                            <span>username</span>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" required>
+                            <span>e-mail</span>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container ">
+                            <label for="user-password"></label>
+                            <input type="password" id="user-password" name="user-password" required>
+                            <span>password</span>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="user-password-conf"></label>
+                            <input type="password" id="user-password-conf" name="user-password-conf" required>
+                            <span>confirm password</span>
+                            <div class="error"></div>
+                        </div>
+                    <div class="form-bottom">
+                        <button type="submit" class="btn-submit">Create Account</button>
+                        <p class="login-text">
+                            Already have an account?
+                            <a href="">Log in</a>
+                        </p>
+                    </div>
+            </div>
+        </form>
+    </main>
     
 </body>
 </html>
