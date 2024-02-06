@@ -106,12 +106,12 @@ html, body{
 }
 
 .site-description {
-    font-size: calc(var(--font-size) * 1.5);
+    font-size: calc(var(--font-size) * 2);
     width: 50vw;
 }
 
 .form-container {
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
