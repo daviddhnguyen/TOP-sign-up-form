@@ -102,26 +102,24 @@ html, body{
 }
 
 .left-align {
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .site-description {
     font-size: calc(var(--font-size) * 1.5);
     width: 50vw;
-    text-align: center;
 }
 
 .form-container {
     margin-top: 5rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+    background-color: var(--form-banner);
 
     box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
-    height: 30vh;
-}
-
-.form-container{
-    background-color: var(--form-banner);
+    height: 40vh;
 }
 
 .form-bottom {
@@ -133,6 +131,16 @@ html, body{
 }
 
 /* FORM INPUT CONTAINER */
+
+.motto {
+    position: relative;
+    font-size: calc(var(--font-size) * 1.5);
+}
+
+.inputs {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .input-container {
     display: flex;
