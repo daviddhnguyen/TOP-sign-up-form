@@ -7,7 +7,7 @@
     --font-color: rgb(34, 21, 11);
     --banner-font-color: cornsilk;
     --accent-color: rgb(195, 152, 92);
-    --form-background: rgb(149, 131, 131);
+    --form-background: rgb(255, 255, 255);
     --form-banner: rgba(195, 152, 92, 0.759);
     --font-size: 1rem;
     --banner-color: rgba(0, 0, 0, 0.7);
@@ -89,10 +89,10 @@ html, body{
 /* RIGHT SIDE AND FORM CONTAINER */
 
 .right-container {
-    background-image: url(./images/wallpaper-natural.jpg);
+    /* background-image: url(./images/wallpaper-natural.jpg);
     background-repeat: repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     background-color: var(--form-background);
     width: calc(100vw - var(--left-width));
 
@@ -162,9 +162,11 @@ input:focus {
 
 
 .btn-submit {
-    background-image: url(./images/wallpaper-natural.jpg);
+    /* background-image: url(./images/wallpaper-natural.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+
+    background-color: var(--form-background);
     border: 4px solid var(--accent-color);
     border-radius: 3px;
     padding: 1rem 2rem;
