@@ -13,7 +13,7 @@
     --banner-color: rgba(0, 0, 0, 0.7);
     --margin-color: rgb(0, 0, 0);
     --error-color: red;
-    --left-width: 30vw;
+    --left-width: 40vw;
 }
 
 /* RESET AND SET BASE STYLES */
@@ -142,8 +142,7 @@ html, body{
     text-transform: uppercase;
     font-size: calc(var(--font-size) * 0.8);
     width: 40%;
-    padding-left: 3vw;
-    opacity: 70%;
+    opacity: 50%;
 }
 
 input {
@@ -151,6 +150,8 @@ input {
     border-radius: 5px;
     padding-left: 1vw;
     background-color: var(--form-banner);
+    height: 4vh;
+    width: 80%;
 }
 
 input:focus {
@@ -167,7 +168,9 @@ input:focus {
     border: 4px solid var(--accent-color);
     border-radius: 3px;
     padding: 1rem 2rem;
-    color: var(--accent-color)
+    color: var(--accent-color);
+    font-weight: 1000;
+    font-size: calc(var(--font-size) * 1.2);
 }
 
 button:hover {
