@@ -8,7 +8,7 @@
     --banner-font-color: cornsilk;
     --accent-color: rgb(195, 152, 92);
     --form-background: rgb(255, 255, 255);
-    --form-banner: rgba(195, 152, 92, 0.759);
+    --form-banner: rgba(195, 152, 92, 0.90);
     --font-size: 1rem;
     --banner-color: rgba(0, 0, 0, 0.7);
     --margin-color: rgb(0, 0, 0);
@@ -118,7 +118,7 @@ html, body{
 
     background-color: var(--form-banner);
 
-    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.7);
     height: 40vh;
 }
 
@@ -161,6 +161,16 @@ input {
     height: 4vh;
     width: 80%;
 }
+
+label {
+    color: black;
+    opacity: 1;
+  }
+
+::placeholder {
+    color: black;
+    opacity: 0.75;
+  }
 
 input:focus {
     outline: none;
