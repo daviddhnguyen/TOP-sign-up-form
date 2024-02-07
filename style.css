@@ -196,3 +196,69 @@ a {
 a:hover {
     font-weight: 1000;
 }
+
+@media screen and (max-width: 1200px) {
+    .card-container {
+        flex-flow: column;
+        height: auto;
+        margin: 0;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100vw;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .right-container {
+        width: 100vw;
+        align-items: center;
+    }
+
+    .logo, .companyName {
+        height: auto;
+        font-size: calc(var(--font-size)*3);
+    }
+
+    .banner {
+        width: 100vw;
+        height: 10vh;
+        top: 10vh;
+    }
+
+    .credit {
+        top: 35vh;
+    }
+
+    .left-align {
+        padding: 0;
+    }
+
+    .site-description {
+        width: 80vw;
+        padding-top: 5vh;
+    }
+
+    .form-container {
+        margin-top: 5vh;
+        align-items: center;
+    }
+
+    .motto {
+        width: 75vw;
+    }
+
+    .inputs {
+        justify-content: center;
+    }
+
+    .input-container {
+        align-items: center;
+        padding: 1vh 0;
+    }
+
+    .login-text {
+        margin-bottom: 10vh;
+    }
+}
