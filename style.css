@@ -113,13 +113,13 @@ html, body{
 .form-container {
     margin-top: 4rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
 
     background-color: var(--form-banner);
 
     box-shadow: 0 7px 30px -10px rgba(150,170,180,0.7);
-    height: 30vh;
+    height: 40vh;
 }
 
 .form-bottom {
@@ -208,7 +208,7 @@ a:hover {
     font-weight: 1000;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     .card-container {
         flex-flow: column;
         height: auto;
@@ -261,6 +261,8 @@ a:hover {
     }
 
     .inputs {
+        display: flex;
+        flex-flow: center;
         justify-content: center;
     }
 
